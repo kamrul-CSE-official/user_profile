@@ -34,10 +34,13 @@ const overviewData = [
 ];
 
 const Overview: React.FC = () => (
-  <div className="space-y-3">
-    {overviewData.map((item, index) => (
-      <TabContents key={index} icon={item.icon} text={item.text} />
-    ))}
+  <div>
+    <p className="text-2xl font-semibold my-2">Overview</p>
+    <div className="space-y-3">
+      {overviewData.map((item, index) => (
+        <TabContents key={index} icon={item.icon} text={item.text} />
+      ))}
+    </div>
   </div>
 );
 
